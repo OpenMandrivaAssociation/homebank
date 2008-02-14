@@ -4,6 +4,7 @@ Release:        %mkrel 1
 Summary:        Free easy personal accounting for all  
 
 Group:          Office
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:        GPLv2+
 URL:            http://homebank.free.fr
 Source0:        http://homebank.free.fr/public/%{name}-%{version}.tar.gz
