@@ -15,6 +15,7 @@ BuildRequires:  perl-XML-Parser
 BuildRequires:  libofx-devel
 BuildRequires:  cairo-devel
 BuildRequires:  atk-devel
+BuildRequires:	intltool
 
 %description
 HomeBank is the free software you have always wanted to manage your personal
