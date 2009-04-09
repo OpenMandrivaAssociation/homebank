@@ -1,6 +1,6 @@
 Name:           homebank
 Version:        4.0.2
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Free easy personal accounting for all  
 
 Group:          Office
@@ -8,6 +8,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:        GPLv2+
 URL:            http://homebank.free.fr
 Source0:        http://homebank.free.fr/public/%{name}-%{version}.tar.gz
+Patch0:		desktop.patch
 
 BuildRequires:  gtk2-devel
 BuildRequires:  desktop-file-utils
@@ -26,6 +27,7 @@ filtering and graphical charts.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure2_5x
