@@ -1,6 +1,6 @@
 Name:           homebank
-Version:        4.0.2
-Release:        %mkrel 2
+Version:        4.0.3
+Release:        %mkrel 1
 Summary:        Free easy personal accounting for all  
 
 Group:          Office
