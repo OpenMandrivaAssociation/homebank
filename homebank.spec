@@ -1,5 +1,5 @@
 Name:           homebank
-Version:        4.0.4
+Version:        4.1
 Release:        %mkrel 1
 Summary:        Free easy personal accounting for all  
 
@@ -66,9 +66,9 @@ update-desktop-database &> /dev/null || :
 %dir %{_datadir}/%{name}/
 %{_datadir}/%{name}/images
 %{_datadir}/applications/*%{name}.desktop
-%{_datadir}/pixmaps/%{name}.svg
 %{_datadir}/icons/hicolor/??x??/apps/%{name}.png
 %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
+%{_datadir}/%{name}
 %{_datadir}/mime-info/%{name}.*
 %{_datadir}/mime/packages/%{name}.xml
 %{_datadir}/application-registry/%{name}.applications
