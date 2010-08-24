@@ -1,5 +1,5 @@
 Name:           homebank
-Version:        4.2.1
+Version:        4.3
 Release:        %mkrel 1
 Summary:        Free easy personal accounting for all  
 
