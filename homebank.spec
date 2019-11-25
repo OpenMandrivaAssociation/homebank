@@ -25,7 +25,7 @@ detailed way instantly and dynamically with powerful report tools based on
 filtering and graphical charts.
 
 %prep
-%autosetup -p0
+%autosetup -p1
 
 %build
 %configure
