@@ -1,9 +1,10 @@
---- data/homebank.desktop.in.in.old	2009-04-09 16:02:28.000000000 +0200
-+++ data/homebank.desktop.in.in	2009-04-09 16:03:05.000000000 +0200
-@@ -6,5 +6,5 @@
+diff -uNr homebank-5.0.3/data/homebank.desktop.in.in homebank-5.0.3p/data/homebank.desktop.in.in
+--- homebank-5.0.3/data/homebank.desktop.in.in	2015-03-27 17:11:56.000000000 +0200
++++ homebank-5.0.3p/data/homebank.desktop.in.in	2015-06-26 22:32:55.241162894 +0300
+@@ -8,5 +8,5 @@
  StartupNotify=true
  Type=Application
  Icon=homebank
--Categories=GTK;Office;Finance;
-+Categories=GTK;Office;Finance;X-MandrivaLinux-CrossDesktop;
+-Categories=GNOME;GTK;Office;Finance;
++Categories=GNOME;GTK;Office;Finance;X-MageiaLinux-CrossDesktop;
  MimeType=application/x-homebank;

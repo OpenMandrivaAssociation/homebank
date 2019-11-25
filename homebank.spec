@@ -1,7 +1,7 @@
 Summary:	Free easy personal accounting for all
 Name:		homebank
-Version:	4.5
-Release:	10
+Version:	5.2.8
+Release:	1
 Group:		Office
 License:	GPLv2+
 Url:		http://homebank.free.fr
@@ -13,8 +13,9 @@ BuildRequires:	intltool
 BuildRequires:	perl-XML-Parser
 BuildRequires:	pkgconfig(atk)
 BuildRequires:	pkgconfig(cairo)
-BuildRequires:	pkgconfig(gtk+-2.0)
+BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(libofx)
+BuildRequires:  pkgconfig(libsoup-2.4)
 
 %description
 HomeBank is the free software you have always wanted to manage your personal
@@ -24,25 +25,24 @@ detailed way instantly and dynamically with powerful report tools based on
 filtering and graphical charts.
 
 %prep
-%setup -q
-%patch0 -p0
+%autosetup -p1
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install INSTALL='install -p'
 
 %find_lang %{name}
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog COPYING NEWS README doc/TODO
 %{_bindir}/%{name}
-%{_datadir}/%{name}
-%{_datadir}/applications/*%{name}.desktop
+%{_datadir}/%{name}/
+%{_datadir}/appdata/%{name}.appdata.xml
 %{_datadir}/application-registry/%{name}.applications
-%{_datadir}/mime/packages/%{name}.xml
+%{_datadir}/applications/%{name}.desktop
 %{_datadir}/mime-info/%{name}.*
-%{_iconsdir}/hicolor/*/apps/%{name}.*
-
+%{_datadir}/mime/packages/%{name}.xml
+%{_iconsdir}/hicolor/*/apps/%{name}.png
