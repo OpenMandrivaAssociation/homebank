@@ -1,7 +1,7 @@
 Summary:	Free easy personal accounting for all
 Name:		homebank
 Version:	5.5.6
-Release:	1
+Release:	2
 Group:		Office
 License:	GPLv2+
 Url:		http://homebank.free.fr
