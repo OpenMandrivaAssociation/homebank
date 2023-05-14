@@ -40,7 +40,7 @@ filtering and graphical charts.
 %doc AUTHORS ChangeLog COPYING NEWS README doc/TODO
 %{_bindir}/%{name}
 %{_datadir}/%{name}/
-#{_datadir}/appdata/%{name}.appdata.xml
+%{_datadir}/metainfo/homebank.appdata.xml
 %{_datadir}/application-registry/%{name}.applications
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/mime-info/%{name}.*
