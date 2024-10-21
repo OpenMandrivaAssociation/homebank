@@ -1,11 +1,11 @@
 Summary:	Free easy personal accounting for all
 Name:		homebank
-Version:	5.8.1
+Version:	5.8.5
 Release:	1
 Group:		Office
 License:	GPLv2+
-Url:		https://homebank.free.fr
-Source0:	https://homebank.free.fr/public/sources/%{name}-%{version}.tar.gz
+Url:		https://www.gethomebank.org
+Source0:	https://www.gethomebank.org/public/sources/homebank-%{version}.tar.gz
 Patch0:		desktop.patch
 
 BuildRequires:	desktop-file-utils
