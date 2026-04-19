@@ -6,7 +6,6 @@ Group:		Office
 License:	GPLv2+
 Url:		https://www.gethomebank.org
 Source0:	https://www.gethomebank.org/public/sources/homebank-%{version}.tar.gz
-Patch0:		desktop.patch
 
 BuildRequires:	autoconf
 BuildRequires:	automake
