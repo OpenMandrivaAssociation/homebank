@@ -1,12 +1,11 @@
 Summary:	Free easy personal accounting for all
 Name:		homebank
-Version:	5.9.5
+Version:	5.10
 Release:	1
 Group:		Office
 License:	GPLv2+
 Url:		https://www.gethomebank.org
 Source0:	https://www.gethomebank.org/public/sources/homebank-%{version}.tar.gz
-Patch0:		desktop.patch
 
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -30,7 +29,7 @@ detailed way instantly and dynamically with powerful report tools based on
 filtering and graphical charts.
 
 %prep
-%autosetup -p1
+%autosetup -n %{name}-5.10.0 -p1
 
 %build
 %configure
