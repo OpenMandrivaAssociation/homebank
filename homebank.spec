@@ -29,7 +29,7 @@ detailed way instantly and dynamically with powerful report tools based on
 filtering and graphical charts.
 
 %prep
-%autosetup -n %{name}-5.10.0 -p1
+%autosetup -n %{name}-%{version} -p1
 
 %build
 %configure
